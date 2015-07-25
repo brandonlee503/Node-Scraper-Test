@@ -1,0 +1,431 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose readDependencies loading dependencies from /Users/BrandonLee/Documents/ScraperTest/package.json
+5 warn package.json scrapertest@1.0.0 No description
+6 warn package.json scrapertest@1.0.0 No README data
+7 verbose install where, deps [ '/Users/BrandonLee/Documents/ScraperTest',
+7 verbose install   [ 'express', 'request', 'cheerio' ] ]
+8 verbose install where, peers [ '/Users/BrandonLee/Documents/ScraperTest', [] ]
+9 verbose installManyTop reading for lifecycle /Users/BrandonLee/Documents/ScraperTest/package.json
+10 info preinstall scrapertest@1.0.0
+11 verbose readDependencies loading dependencies from /Users/BrandonLee/Documents/ScraperTest/package.json
+12 silly cache add args [ 'express@latest', null ]
+13 verbose cache add spec express@latest
+14 silly cache add args [ 'request@latest', null ]
+15 verbose cache add spec request@latest
+16 silly cache add args [ 'cheerio@latest', null ]
+17 verbose cache add spec cheerio@latest
+18 silly cache add parsed spec { raw: 'express@latest',
+18 silly cache add   scope: null,
+18 silly cache add   name: 'express',
+18 silly cache add   rawSpec: 'latest',
+18 silly cache add   spec: 'latest',
+18 silly cache add   type: 'tag' }
+19 silly addNamed express@latest
+20 verbose addNamed "latest" is being treated as a dist-tag for express
+21 info addNameTag [ 'express', 'latest' ]
+22 silly mapToRegistry name express
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/express
+26 verbose addNameTag registry:https://registry.npmjs.org/express not in flight; fetching
+27 silly cache add parsed spec { raw: 'request@latest',
+27 silly cache add   scope: null,
+27 silly cache add   name: 'request',
+27 silly cache add   rawSpec: 'latest',
+27 silly cache add   spec: 'latest',
+27 silly cache add   type: 'tag' }
+28 silly addNamed request@latest
+29 verbose addNamed "latest" is being treated as a dist-tag for request
+30 info addNameTag [ 'request', 'latest' ]
+31 silly mapToRegistry name request
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/request
+35 verbose addNameTag registry:https://registry.npmjs.org/request not in flight; fetching
+36 silly cache add parsed spec { raw: 'cheerio@latest',
+36 silly cache add   scope: null,
+36 silly cache add   name: 'cheerio',
+36 silly cache add   rawSpec: 'latest',
+36 silly cache add   spec: 'latest',
+36 silly cache add   type: 'tag' }
+37 silly addNamed cheerio@latest
+38 verbose addNamed "latest" is being treated as a dist-tag for cheerio
+39 info addNameTag [ 'cheerio', 'latest' ]
+40 silly mapToRegistry name cheerio
+41 silly mapToRegistry using default registry
+42 silly mapToRegistry registry https://registry.npmjs.org/
+43 silly mapToRegistry uri https://registry.npmjs.org/cheerio
+44 verbose addNameTag registry:https://registry.npmjs.org/cheerio not in flight; fetching
+45 verbose request uri https://registry.npmjs.org/express
+46 verbose request no auth needed
+47 info attempt registry request try #1 at 3:37:35 PM
+48 verbose request id b0e703a688443250
+49 http request GET https://registry.npmjs.org/express
+50 verbose request uri https://registry.npmjs.org/request
+51 verbose request no auth needed
+52 info attempt registry request try #1 at 3:37:35 PM
+53 http request GET https://registry.npmjs.org/request
+54 verbose request uri https://registry.npmjs.org/cheerio
+55 verbose request no auth needed
+56 info attempt registry request try #1 at 3:37:35 PM
+57 http request GET https://registry.npmjs.org/cheerio
+58 http 200 https://registry.npmjs.org/request
+59 silly get cb [ 200,
+59 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+59 silly get     etag: '"B0S15DZ5415U6SD5I1Y4H8C98"',
+59 silly get     'content-type': 'application/json',
+59 silly get     'cache-control': 'max-age=60',
+59 silly get     'content-length': '160820',
+59 silly get     'accept-ranges': 'bytes',
+59 silly get     date: 'Sat, 25 Jul 2015 22:37:35 GMT',
+59 silly get     via: '1.1 varnish',
+59 silly get     age: '36',
+59 silly get     connection: 'keep-alive',
+59 silly get     'x-served-by': 'cache-ord1731-ORD',
+59 silly get     'x-cache': 'HIT',
+59 silly get     'x-cache-hits': '2',
+59 silly get     'x-timer': 'S1437863855.838615,VS0,VE0',
+59 silly get     vary: 'Accept' } ]
+60 verbose get saving request to /Users/BrandonLee/.npm/registry.npmjs.org/request/.cache.json
+61 silly addNameTag next cb for request with tag latest
+62 silly addNamed request@2.60.0
+63 verbose addNamed "2.60.0" is a plain semver version for request
+64 silly mapToRegistry name request
+65 silly mapToRegistry using default registry
+66 silly mapToRegistry registry https://registry.npmjs.org/
+67 silly mapToRegistry uri https://registry.npmjs.org/request
+68 verbose addRemoteTarball https://registry.npmjs.org/request/-/request-2.60.0.tgz not in flight; adding
+69 verbose addRemoteTarball [ 'https://registry.npmjs.org/request/-/request-2.60.0.tgz',
+69 verbose addRemoteTarball   '498820957fcdded1d37749069610c85f61a29f2d' ]
+70 info retry fetch attempt 1 at 3:37:36 PM
+71 info attempt registry request try #1 at 3:37:36 PM
+72 http fetch GET https://registry.npmjs.org/request/-/request-2.60.0.tgz
+73 http 200 https://registry.npmjs.org/cheerio
+74 silly get cb [ 200,
+74 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+74 silly get     etag: '"C6NUXVNUEE81MWZNVVXMRT7DE"',
+74 silly get     'content-type': 'application/json',
+74 silly get     'cache-control': 'max-age=60',
+74 silly get     'content-length': '91322',
+74 silly get     'accept-ranges': 'bytes',
+74 silly get     date: 'Sat, 25 Jul 2015 22:37:36 GMT',
+74 silly get     via: '1.1 varnish',
+74 silly get     age: '0',
+74 silly get     connection: 'keep-alive',
+74 silly get     'x-served-by': 'cache-ord1726-ORD',
+74 silly get     'x-cache': 'HIT',
+74 silly get     'x-cache-hits': '1',
+74 silly get     'x-timer': 'S1437863855.834226,VS0,VE259',
+74 silly get     vary: 'Accept' } ]
+75 verbose get saving cheerio to /Users/BrandonLee/.npm/registry.npmjs.org/cheerio/.cache.json
+76 silly addNameTag next cb for cheerio with tag latest
+77 silly addNamed cheerio@0.19.0
+78 verbose addNamed "0.19.0" is a plain semver version for cheerio
+79 silly mapToRegistry name cheerio
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry uri https://registry.npmjs.org/cheerio
+83 verbose addRemoteTarball https://registry.npmjs.org/cheerio/-/cheerio-0.19.0.tgz not in flight; adding
+84 verbose addRemoteTarball [ 'https://registry.npmjs.org/cheerio/-/cheerio-0.19.0.tgz',
+84 verbose addRemoteTarball   '772e7015f2ee29965096d71ea4175b75ab354925' ]
+85 info retry fetch attempt 1 at 3:37:36 PM
+86 info attempt registry request try #1 at 3:37:36 PM
+87 http fetch GET https://registry.npmjs.org/cheerio/-/cheerio-0.19.0.tgz
+88 http fetch 200 https://registry.npmjs.org/request/-/request-2.60.0.tgz
+89 silly fetchAndShaCheck shasum 498820957fcdded1d37749069610c85f61a29f2d
+90 verbose addTmpTarball /var/folders/tp/vvwj4nln5nn5j6b6326cw5vr0000gn/T/npm-10071-888112d9/registry.npmjs.org/request/-/request-2.60.0.tgz not in flight; adding
+91 verbose addTmpTarball already have metadata; skipping unpack for request@2.60.0
+92 silly cache afterAdd request@2.60.0
+93 verbose afterAdd /Users/BrandonLee/.npm/request/2.60.0/package/package.json not in flight; writing
+94 verbose afterAdd /Users/BrandonLee/.npm/request/2.60.0/package/package.json written
+95 http fetch 200 https://registry.npmjs.org/cheerio/-/cheerio-0.19.0.tgz
+96 silly fetchAndShaCheck shasum 772e7015f2ee29965096d71ea4175b75ab354925
+97 verbose addTmpTarball /var/folders/tp/vvwj4nln5nn5j6b6326cw5vr0000gn/T/npm-10071-888112d9/registry.npmjs.org/cheerio/-/cheerio-0.19.0.tgz not in flight; adding
+98 verbose addTmpTarball already have metadata; skipping unpack for cheerio@0.19.0
+99 silly cache afterAdd cheerio@0.19.0
+100 verbose afterAdd /Users/BrandonLee/.npm/cheerio/0.19.0/package/package.json not in flight; writing
+101 verbose afterAdd /Users/BrandonLee/.npm/cheerio/0.19.0/package/package.json written
+102 http 200 https://registry.npmjs.org/express
+103 silly get cb [ 200,
+103 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+103 silly get     etag: '"41CM8H316QIFREZJAEZM2WHXB"',
+103 silly get     'content-type': 'application/json',
+103 silly get     'cache-control': 'max-age=60',
+103 silly get     'content-length': '516021',
+103 silly get     'accept-ranges': 'bytes',
+103 silly get     date: 'Sat, 25 Jul 2015 22:37:35 GMT',
+103 silly get     via: '1.1 varnish',
+103 silly get     age: '0',
+103 silly get     connection: 'keep-alive',
+103 silly get     'x-served-by': 'cache-ord1731-ORD',
+103 silly get     'x-cache': 'HIT',
+103 silly get     'x-cache-hits': '1',
+103 silly get     'x-timer': 'S1437863855.834445,VS0,VE156',
+103 silly get     vary: 'Accept' } ]
+104 verbose get saving express to /Users/BrandonLee/.npm/registry.npmjs.org/express/.cache.json
+105 silly addNameTag next cb for express with tag latest
+106 silly addNamed express@4.13.1
+107 verbose addNamed "4.13.1" is a plain semver version for express
+108 silly mapToRegistry name express
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry uri https://registry.npmjs.org/express
+112 verbose addRemoteTarball https://registry.npmjs.org/express/-/express-4.13.1.tgz not in flight; adding
+113 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.13.1.tgz',
+113 verbose addRemoteTarball   'f117aa1d1f6bedbc8de5b6d71fc31a5acd0f63df' ]
+114 info retry fetch attempt 1 at 3:37:36 PM
+115 info attempt registry request try #1 at 3:37:36 PM
+116 http fetch GET https://registry.npmjs.org/express/-/express-4.13.1.tgz
+117 http fetch 200 https://registry.npmjs.org/express/-/express-4.13.1.tgz
+118 silly fetchAndShaCheck shasum f117aa1d1f6bedbc8de5b6d71fc31a5acd0f63df
+119 verbose addTmpTarball /var/folders/tp/vvwj4nln5nn5j6b6326cw5vr0000gn/T/npm-10071-888112d9/registry.npmjs.org/express/-/express-4.13.1.tgz not in flight; adding
+120 verbose addTmpTarball already have metadata; skipping unpack for express@4.13.1
+121 silly cache afterAdd express@4.13.1
+122 verbose afterAdd /Users/BrandonLee/.npm/express/4.13.1/package/package.json not in flight; writing
+123 verbose afterAdd /Users/BrandonLee/.npm/express/4.13.1/package/package.json written
+124 silly install resolved [ { name: 'request',
+124 silly install resolved     description: 'Simplified HTTP request client.',
+124 silly install resolved     tags: [ 'http', 'simple', 'util', 'utility' ],
+124 silly install resolved     version: '2.60.0',
+124 silly install resolved     author: { name: 'Mikeal Rogers', email: 'mikeal.rogers@gmail.com' },
+124 silly install resolved     repository:
+124 silly install resolved      { type: 'git',
+124 silly install resolved        url: 'git+https://github.com/request/request.git' },
+124 silly install resolved     bugs: { url: 'http://github.com/request/request/issues' },
+124 silly install resolved     license: 'Apache-2.0',
+124 silly install resolved     engines: { node: '>=0.8.0' },
+124 silly install resolved     main: 'index.js',
+124 silly install resolved     dependencies:
+124 silly install resolved      { bl: '~1.0.0',
+124 silly install resolved        caseless: '~0.11.0',
+124 silly install resolved        extend: '~3.0.0',
+124 silly install resolved        'forever-agent': '~0.6.0',
+124 silly install resolved        'form-data': '~1.0.0-rc1',
+124 silly install resolved        'json-stringify-safe': '~5.0.0',
+124 silly install resolved        'mime-types': '~2.1.2',
+124 silly install resolved        'node-uuid': '~1.4.0',
+124 silly install resolved        qs: '~4.0.0',
+124 silly install resolved        'tunnel-agent': '~0.4.0',
+124 silly install resolved        'tough-cookie': '>=0.12.0',
+124 silly install resolved        'http-signature': '~0.11.0',
+124 silly install resolved        'oauth-sign': '~0.8.0',
+124 silly install resolved        hawk: '~3.1.0',
+124 silly install resolved        'aws-sign2': '~0.5.0',
+124 silly install resolved        stringstream: '~0.0.4',
+124 silly install resolved        'combined-stream': '~1.0.1',
+124 silly install resolved        isstream: '~0.1.1',
+124 silly install resolved        'har-validator': '^1.6.1' },
+124 silly install resolved     scripts:
+124 silly install resolved      { test: 'npm run lint && npm run test-ci && npm run test-browser',
+124 silly install resolved        'test-ci': 'taper tests/test-*.js',
+124 silly install resolved        'test-cov': 'istanbul cover tape tests/test-*.js',
+124 silly install resolved        'test-browser': 'node tests/browser/start.js',
+124 silly install resolved        lint: 'eslint lib/ *.js tests/ && echo Lint passed.' },
+124 silly install resolved     devDependencies:
+124 silly install resolved      { browserify: '~5.9.1',
+124 silly install resolved        'browserify-istanbul': '~0.1.3',
+124 silly install resolved        'buffer-equal': '0.0.1',
+124 silly install resolved        'codecov.io': '~0.1.2',
+124 silly install resolved        coveralls: '~2.11.2',
+124 silly install resolved        eslint: '0.18.0',
+124 silly install resolved        'function-bind': '~1.0.0',
+124 silly install resolved        istanbul: '~0.3.2',
+124 silly install resolved        karma: '~0.12.21',
+124 silly install resolved        'karma-browserify': '~3.0.1',
+124 silly install resolved        'karma-cli': '0.0.4',
+124 silly install resolved        'karma-coverage': '0.2.6',
+124 silly install resolved        'karma-phantomjs-launcher': '~0.1.4',
+124 silly install resolved        'karma-tap': '~1.0.1',
+124 silly install resolved        rimraf: '~2.2.8',
+124 silly install resolved        'server-destroy': '~1.0.0',
+124 silly install resolved        tape: '~3.0.0',
+124 silly install resolved        taper: '~0.4.0',
+124 silly install resolved        bluebird: '~2.9.21' },
+124 silly install resolved     gitHead: 'af19cef3bc60e9151ffce5015d8ce3c0728d3aca',
+124 silly install resolved     homepage: 'https://github.com/request/request#readme',
+124 silly install resolved     _id: 'request@2.60.0',
+124 silly install resolved     _shasum: '498820957fcdded1d37749069610c85f61a29f2d',
+124 silly install resolved     _from: 'request@latest',
+124 silly install resolved     _npmVersion: '2.11.2',
+124 silly install resolved     _nodeVersion: '0.12.6',
+124 silly install resolved     _npmUser: { name: 'simov', email: 'simeonvelichkov@gmail.com' },
+124 silly install resolved     dist:
+124 silly install resolved      { shasum: '498820957fcdded1d37749069610c85f61a29f2d',
+124 silly install resolved        tarball: 'http://registry.npmjs.org/request/-/request-2.60.0.tgz' },
+124 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+124 silly install resolved     directories: {},
+124 silly install resolved     _resolved: 'https://registry.npmjs.org/request/-/request-2.60.0.tgz' },
+124 silly install resolved   { name: 'cheerio',
+124 silly install resolved     version: '0.19.0',
+124 silly install resolved     description: 'Tiny, fast, and elegant implementation of core jQuery designed specifically for the server',
+124 silly install resolved     author:
+124 silly install resolved      { name: 'Matt Mueller',
+124 silly install resolved        email: 'mattmuelle@gmail.com',
+124 silly install resolved        url: 'mat.io' },
+124 silly install resolved     license: 'MIT',
+124 silly install resolved     keywords: [ 'htmlparser', 'jquery', 'selector', 'scraper', 'parser', 'html' ],
+124 silly install resolved     repository: { type: 'git', url: 'git://github.com/cheeriojs/cheerio.git' },
+124 silly install resolved     main: './index.js',
+124 silly install resolved     engines: { node: '>= 0.6' },
+124 silly install resolved     dependencies:
+124 silly install resolved      { 'css-select': '~1.0.0',
+124 silly install resolved        entities: '~1.1.1',
+124 silly install resolved        htmlparser2: '~3.8.1',
+124 silly install resolved        'dom-serializer': '~0.1.0',
+124 silly install resolved        lodash: '^3.2.0' },
+124 silly install resolved     devDependencies:
+124 silly install resolved      { benchmark: '~1.0.0',
+124 silly install resolved        coveralls: '~2.10',
+124 silly install resolved        'expect.js': '~0.3.1',
+124 silly install resolved        istanbul: '~0.2',
+124 silly install resolved        jsdom: '~0.8.9',
+124 silly install resolved        jshint: '~2.5.1',
+124 silly install resolved        mocha: '*',
+124 silly install resolved        xyz: '~0.5.0' },
+124 silly install resolved     scripts: { test: 'make test' },
+124 silly install resolved     gitHead: '9e3746d391c47a09ad5b130d770c747a0d673869',
+124 silly install resolved     bugs: { url: 'https://github.com/cheeriojs/cheerio/issues' },
+124 silly install resolved     homepage: 'https://github.com/cheeriojs/cheerio',
+124 silly install resolved     _id: 'cheerio@0.19.0',
+124 silly install resolved     _shasum: '772e7015f2ee29965096d71ea4175b75ab354925',
+124 silly install resolved     _from: 'cheerio@latest',
+124 silly install resolved     _npmVersion: '2.7.1',
+124 silly install resolved     _nodeVersion: '1.5.1',
+124 silly install resolved     _npmUser: { name: 'feedic', email: 'me@feedic.com' },
+124 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+124 silly install resolved     dist:
+124 silly install resolved      { shasum: '772e7015f2ee29965096d71ea4175b75ab354925',
+124 silly install resolved        tarball: 'http://registry.npmjs.org/cheerio/-/cheerio-0.19.0.tgz' },
+124 silly install resolved     directories: {},
+124 silly install resolved     _resolved: 'https://registry.npmjs.org/cheerio/-/cheerio-0.19.0.tgz' },
+124 silly install resolved   { name: 'express',
+124 silly install resolved     description: 'Fast, unopinionated, minimalist web framework',
+124 silly install resolved     version: '4.13.1',
+124 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+124 silly install resolved     contributors:
+124 silly install resolved      [ [Object],
+124 silly install resolved        [Object],
+124 silly install resolved        [Object],
+124 silly install resolved        [Object],
+124 silly install resolved        [Object],
+124 silly install resolved        [Object],
+124 silly install resolved        [Object] ],
+124 silly install resolved     license: 'MIT',
+124 silly install resolved     repository: { type: 'git', url: 'https://github.com/strongloop/express' },
+124 silly install resolved     homepage: 'http://expressjs.com/',
+124 silly install resolved     keywords:
+124 silly install resolved      [ 'express',
+124 silly install resolved        'framework',
+124 silly install resolved        'sinatra',
+124 silly install resolved        'web',
+124 silly install resolved        'rest',
+124 silly install resolved        'restful',
+124 silly install resolved        'router',
+124 silly install resolved        'app',
+124 silly install resolved        'api' ],
+124 silly install resolved     dependencies:
+124 silly install resolved      { accepts: '~1.2.10',
+124 silly install resolved        'array-flatten': '1.1.0',
+124 silly install resolved        'content-disposition': '0.5.0',
+124 silly install resolved        'content-type': '~1.0.1',
+124 silly install resolved        cookie: '0.1.3',
+124 silly install resolved        'cookie-signature': '1.0.6',
+124 silly install resolved        debug: '~2.2.0',
+124 silly install resolved        depd: '~1.0.1',
+124 silly install resolved        'escape-html': '1.0.2',
+124 silly install resolved        etag: '~1.7.0',
+124 silly install resolved        finalhandler: '0.4.0',
+124 silly install resolved        fresh: '0.3.0',
+124 silly install resolved        'merge-descriptors': '1.0.0',
+124 silly install resolved        methods: '~1.1.1',
+124 silly install resolved        'on-finished': '~2.3.0',
+124 silly install resolved        parseurl: '~1.3.0',
+124 silly install resolved        'path-to-regexp': '0.1.6',
+124 silly install resolved        'proxy-addr': '~1.0.8',
+124 silly install resolved        qs: '4.0.0',
+124 silly install resolved        'range-parser': '~1.0.2',
+124 silly install resolved        send: '0.13.0',
+124 silly install resolved        'serve-static': '~1.10.0',
+124 silly install resolved        'type-is': '~1.6.4',
+124 silly install resolved        vary: '~1.0.0',
+124 silly install resolved        'utils-merge': '1.0.0' },
+124 silly install resolved     devDependencies:
+124 silly install resolved      { after: '0.8.1',
+124 silly install resolved        ejs: '2.3.2',
+124 silly install resolved        istanbul: '0.3.9',
+124 silly install resolved        marked: '0.3.3',
+124 silly install resolved        mocha: '2.2.5',
+124 silly install resolved        should: '7.0.1',
+124 silly install resolved        supertest: '1.0.1',
+124 silly install resolved        'body-parser': '~1.13.2',
+124 silly install resolved        'connect-redis': '~2.3.0',
+124 silly install resolved        'cookie-parser': '~1.3.5',
+124 silly install resolved        'cookie-session': '~1.2.0',
+124 silly install resolved        'express-session': '~1.11.3',
+124 silly install resolved        jade: '~1.11.0',
+124 silly install resolved        'method-override': '~2.3.3',
+124 silly install resolved        morgan: '~1.6.1',
+124 silly install resolved        multiparty: '~4.1.2',
+124 silly install resolved        vhost: '~3.0.0' },
+124 silly install resolved     engines: { node: '>= 0.10.0' },
+124 silly install resolved     files: [ 'LICENSE', 'History.md', 'Readme.md', 'index.js', 'lib/' ],
+124 silly install resolved     scripts:
+124 silly install resolved      { test: 'mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/',
+124 silly install resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/ test/acceptance/',
+124 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/ test/acceptance/',
+124 silly install resolved        'test-tap': 'mocha --require test/support/env --reporter tap --check-leaks test/ test/acceptance/' },
+124 silly install resolved     gitHead: '2ac25098548f739c4f2b526b2a00aa60a74c8e75',
+124 silly install resolved     bugs: { url: 'https://github.com/strongloop/express/issues' },
+124 silly install resolved     _id: 'express@4.13.1',
+124 silly install resolved     _shasum: 'f117aa1d1f6bedbc8de5b6d71fc31a5acd0f63df',
+124 silly install resolved     _from: 'express@latest',
+124 silly install resolved     _npmVersion: '1.4.28',
+124 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+124 silly install resolved     maintainers:
+124 silly install resolved      [ [Object],
+124 silly install resolved        [Object],
+124 silly install resolved        [Object],
+124 silly install resolved        [Object],
+124 silly install resolved        [Object],
+124 silly install resolved        [Object],
+124 silly install resolved        [Object] ],
+124 silly install resolved     dist:
+124 silly install resolved      { shasum: 'f117aa1d1f6bedbc8de5b6d71fc31a5acd0f63df',
+124 silly install resolved        tarball: 'http://registry.npmjs.org/express/-/express-4.13.1.tgz' },
+124 silly install resolved     directories: {},
+124 silly install resolved     _resolved: 'https://registry.npmjs.org/express/-/express-4.13.1.tgz' } ]
+125 info install request@2.60.0 into /Users/BrandonLee/Documents/ScraperTest
+126 info install cheerio@0.19.0 into /Users/BrandonLee/Documents/ScraperTest
+127 info install express@4.13.1 into /Users/BrandonLee/Documents/ScraperTest
+128 info installOne request@2.60.0
+129 verbose installOne of request to /Users/BrandonLee/Documents/ScraperTest not in flight; installing
+130 info installOne cheerio@0.19.0
+131 verbose installOne of cheerio to /Users/BrandonLee/Documents/ScraperTest not in flight; installing
+132 info installOne express@4.13.1
+133 verbose installOne of express to /Users/BrandonLee/Documents/ScraperTest not in flight; installing
+134 warn locking Error: EACCES, open '/Users/BrandonLee/.npm/_locks/request-460fb4ee8e9d7210.lock'
+134 warn locking     at Error (native)
+134 warn locking  /Users/BrandonLee/.npm/_locks/request-460fb4ee8e9d7210.lock failed { [Error: EACCES, open '/Users/BrandonLee/.npm/_locks/request-460fb4ee8e9d7210.lock']
+134 warn locking   errno: -13,
+134 warn locking   code: 'EACCES',
+134 warn locking   path: '/Users/BrandonLee/.npm/_locks/request-460fb4ee8e9d7210.lock' }
+135 verbose stack Error: Attempt to unlock /Users/BrandonLee/Documents/ScraperTest/node_modules/request, which hasn't been locked
+135 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+135 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1017:5)
+135 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1021:20
+135 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+135 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+135 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+135 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+136 verbose cwd /Users/BrandonLee/Documents/ScraperTest
+137 error Darwin 14.3.0
+138 error argv "node" "/usr/local/bin/npm" "install"
+139 error node v0.12.4
+140 error npm  v2.10.1
+141 error Attempt to unlock /Users/BrandonLee/Documents/ScraperTest/node_modules/request, which hasn't been locked
+142 error If you need help, you may report this error at:
+142 error     <https://github.com/npm/npm/issues>
+143 verbose exit [ 1, true ]
