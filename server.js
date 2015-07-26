@@ -27,14 +27,23 @@ app.get('/scrape', function(req, res){
             var title, release, rating;
             var json = {title: "", release: "", rating: ""};
 
-            // Title seems to be in the header class so...
+            // Title and year seem to be in the header class so...
             $('.header').filter(function() {
                 
                 // Store the filtered data in variable for easy viewing
                 var data = $(this);
 
-                // In the DOM, it is seen that the title is in the first child element of the header tag.
+                // In the DOM, the title is in the first child element of the header tag.
                 title = data.child.first().text();
+
+                // Store title in JSON object
+                json.title = title;
+
+                // In the DOM, the year is the last child element of the header tag.
+                year = data.child.last().text();
+
+                // Store year in JSON object
+                json.year = year;
             }
         }
     })
