@@ -26,6 +26,16 @@ app.get('/scrape', function(req, res){
             // Define the variables we want to capture
             var title, release, rating;
             var json = {title: "", release: "", rating: ""};
+
+            // Title seems to be in the header class so...
+            $('.header').filter(function() {
+                
+                // Store the filtered data in variable for easy viewing
+                var data = $(this);
+
+                // In the DOM, it is seen that the title is in the first child element of the header tag.
+                title = data.child.first().text();
+            }
         }
     })
 };
