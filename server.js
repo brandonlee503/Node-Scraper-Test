@@ -27,7 +27,7 @@ app.get('/scrape', function(req, res){
             var title, release, rating;
             var json = {title: "", release: "", rating: ""};
 
-            // Title and year seem to be in the header class so...
+            // Title and year are in the header class so...
             $('.header').filter(function() {
                 
                 // Store the filtered data in variable for easy viewing
@@ -44,7 +44,21 @@ app.get('/scrape', function(req, res){
 
                 // Store year in JSON object
                 json.year = year;
-            }
+            })
+
+            // Rating is in .star-box-giga-star class so...
+            $('.star-box-giga-star').filter(function() {
+                
+                // Store the filtered data in variable for easy viewing
+                var data = $(this);
+                
+                // The .star-box-giga-star class was exactly where we wanted it to be.
+                // To get the rating, we can simply just get the .text(), no need to traverse the DOM any further
+                rating = data.text();
+
+                // Store rating in JSON object
+                json.rating = rating;
+            })
         }
     })
 };
