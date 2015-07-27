@@ -73,6 +73,7 @@ app.get('/scrape', function(req, res){
     });
 });
 
+app.listen(8080);
 console.log("Server initilizes at port 8080");
 
 // Modularlize our code (exporting our functions)
