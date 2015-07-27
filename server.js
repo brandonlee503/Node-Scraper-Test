@@ -60,7 +60,6 @@ app.get('/scrape', function(req, res){
                 json.rating = rating;
             })
         }
-    })
 
     // Write JSON variable to the file system
     // The parameters for this writefile function are (filename, data, callback)
@@ -70,7 +69,9 @@ app.get('/scrape', function(req, res){
 
     // Send message to browser since this app does not have a UI
     res.send("Check your files!");
-}
+    
+    });
+});
 
 // Irrelevent code
 /*
