@@ -73,10 +73,8 @@ app.get('/scrape', function(req, res){
     });
 });
 
-// Irrelevent code
-/*
 console.log("Server initilizes at port 8080");
 
 // Modularlize our code (exporting our functions)
 exports = module.exports = app;
-*/
+
