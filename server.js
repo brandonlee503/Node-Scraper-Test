@@ -61,10 +61,21 @@ app.get('/scrape', function(req, res){
             })
         }
     })
-};
 
+    // Write JSON variable to the file system
+    // The parameters for this writefile function are (filename, data, callback)
+    fs.writeFile('output.json', JSON.stringify(json, null, 4), function(err) {
+        console.log("File sucessfully written");
+    })
+
+    // Send message to browser since this app does not have a UI
+    res.send("Check your files!");
+}
+
+// Irrelevent code
+/*
 console.log("Server initilizes at port 8080");
 
 // Modularlize our code (exporting our functions)
 exports = module.exports = app;
-
+*/
