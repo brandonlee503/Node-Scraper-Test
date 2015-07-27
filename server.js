@@ -24,8 +24,8 @@ app.get('/scrape', function(req, res){
             var $ = cheerio.load(html);
 
             // Define the variables we want to capture
-            var title, release, rating;
-            var json = {title: "", release: "", rating: ""};
+            var title, year, rating;
+            var json = {title: "", year: "", rating: ""};
 
             // Title and year are in the header class so...
             $('.header').filter(function() {
