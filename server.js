@@ -34,13 +34,13 @@ app.get('/scrape', function(req, res){
                 var data = $(this);
 
                 // In the DOM, the title is in the first child element of the header tag.
-                title = data.child.first().text();
+                title = data.children().first().text();
 
                 // Store title in JSON object
                 json.title = title;
 
                 // In the DOM, the year is the last child element of the header tag.
-                year = data.child.last().text();
+                year = data.children().last().text();
 
                 // Store year in JSON object
                 json.year = year;
